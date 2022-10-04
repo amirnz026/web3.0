@@ -6,10 +6,11 @@ import { contractABI, contractAddress } from "../utils/constants";
 export const TransactionContext = React.createContext();
 
 const { ethereum } = window;
-
 const createEthereumContract = () => {
   const provider = new ethers.providers.Web3Provider(ethereum);
+
   const signer = provider.getSigner();
+
   const transactionsContract = new ethers.Contract(
     contractAddress,
     contractABI,
@@ -66,7 +67,6 @@ export const TransactionsProvider = ({ children }) => {
       }
     } catch (error) {
       console.log(error);
-      throw new Error("getAllTransactions");
     }
   };
 
@@ -85,16 +85,16 @@ export const TransactionsProvider = ({ children }) => {
       }
     } catch (error) {
       console.log(error);
-      throw new Error("checkIfWalletIsConnect");
     }
   };
-
   const checkIfTransactionsExists = async () => {
     try {
       if (ethereum) {
         const transactionsContract = createEthereumContract();
+
         const currentTransactionCount =
           await transactionsContract.getTransactionCount();
+        // error^^
 
         window.localStorage.setItem(
           "transactionCount",
@@ -104,7 +104,7 @@ export const TransactionsProvider = ({ children }) => {
     } catch (error) {
       console.log(error);
 
-      throw new Error("checkIfTransactionsExists");
+      throw new Error("No ethereum object");
     }
   };
 
@@ -121,7 +121,7 @@ export const TransactionsProvider = ({ children }) => {
     } catch (error) {
       console.log(error);
 
-      throw new Error("connectWallet");
+      throw new Error("No ethereum object");
     }
   };
 
@@ -168,7 +168,7 @@ export const TransactionsProvider = ({ children }) => {
     } catch (error) {
       console.log(error);
 
-      throw new Error("sendTransaction");
+      throw new Error("No ethereum object");
     }
   };
 

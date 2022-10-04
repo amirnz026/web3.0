@@ -6,8 +6,6 @@ import { TransactionsProvider } from "./context/TransactionContext";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <TransactionsProvider>
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
+    <App />
   </TransactionsProvider>
 );
