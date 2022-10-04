@@ -1,5 +1,5 @@
 // https://eth-goerli.g.alchemy.com/v2/SI1LCxnPJafOPPe2GW_p4hPq9lhCOk_N
-require("@nomiclabs/hardhat-waffle");
+require("@nomicfoundation/hardhat-toolbox");
 // require("@nomicfoundation/hardhat-chai-matchers");
 
 module.exports = {
