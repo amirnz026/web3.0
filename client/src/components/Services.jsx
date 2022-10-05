@@ -22,35 +22,32 @@ const Services = () => (
     <div className="flex mf:flex-row flex-col items-center justify-between md:p-20 py-12 px-4">
       <div className="flex-1 flex flex-col justify-start items-start">
         <h1 className="text-white text-3xl sm:text-5xl py-2 text-gradient ">
-          Services that we
-          <br />
-          continue to improve
+          خدماتی که همواره در حال بهبود کیفیت آن‌ها هستیم.
         </h1>
         <p className="text-left my-2 text-white font-light md:w-9/12 w-11/12 text-base">
-          The best choice for buying and selling your crypto assets, with the
-          various super friendly services we offer بهترین انتخاب برای خرید و
-          فروش ارزدیجیتال، با خدمات کاربر پسندی که ما ارائه میدهیم.
+          بهترین انتخاب برای خرید و. فروش ارزدیجیتال، با خدمات کاربر پسندی که ما
+          ارائه می‌دهیم.
         </p>
       </div>
 
       <div className="flex-1 flex flex-col justify-start items-center">
         <ServiceCard
           color="bg-[#2952E3]"
-          title="Security gurantee"
+          title="تضمین امنیت"
           icon={<BsShieldFillCheck fontSize={21} className="text-white" />}
-          subtitle="Security is guranteed. We always maintain privacy and maintain the quality of our products"
+          subtitle="امنیت و کیفیت سرویس‌های ما تضمین شده هستند. همواره اصل راهبردی ما، حفظ حریم خصوصی کاربران است."
         />
         <ServiceCard
           color="bg-[#8945F8]"
-          title="Best exchange rates"
+          title="کمترین کارمزد"
           icon={<BiSearchAlt fontSize={21} className="text-white" />}
-          subtitle="Security is guranteed. We always maintain privacy and maintain the quality of our products"
+          subtitle="با استفاده از الگوریتم‌های بهینه، خیالتان از پرداخت کمترین کارمزد راحت خواهد بود."
         />
         <ServiceCard
           color="bg-[#F84550]"
-          title="Fastest transactions"
+          title="بالاترین سرعت تراکنش ها"
           icon={<RiHeart2Fill fontSize={21} className="text-white" />}
-          subtitle="Security is guranteed. We always maintain privacy and maintain the quality of our products"
+          subtitle="سرویس‌های ما با استفاده از پیشرفته‌ترین تکنولوژی‌های بلاک‌چین، میانگین سرعت ثبت تراکنش ۳۰ ثانیه را به شما می‌دهید."
         />
       </div>
     </div>

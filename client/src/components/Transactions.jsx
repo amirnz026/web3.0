@@ -35,7 +35,7 @@ const TransactionsCard = ({
             rel="noreferrer"
           >
             <p className="text-white text-base">
-              From: {shortenAddress(addressFrom)}
+              آدرس مبدا: {shortenAddress(addressFrom)}
             </p>
           </a>
           <a
@@ -44,14 +44,14 @@ const TransactionsCard = ({
             rel="noreferrer"
           >
             <p className="text-white text-base">
-              To: {shortenAddress(addressTo)}
+              آدرس مقصد: {shortenAddress(addressTo)}
             </p>
           </a>
-          <p className="text-white text-base">Amount: {amount} ETH</p>
+          <p className="text-white text-base">مقدار: {amount} ETH</p>
           {message && (
             <>
               <br />
-              <p className="text-white text-base">Message: {message}</p>
+              <p className="text-white text-base">توضیحات: {message}</p>
             </>
           )}
         </div>
@@ -76,11 +76,12 @@ const Transactions = () => {
       <div className="flex flex-col md:p-12 py-12 px-4">
         {currentAccount ? (
           <h3 className="text-white text-3xl text-center my-2">
-            Latest Transactions
+            آخرین تراکنش ها
           </h3>
         ) : (
           <h3 className="text-white text-3xl text-center my-2">
-            Connect your account to see the latest transactions
+            برای مشاهده آخرین تراکنش ها، کیف پول{" "}
+            <span className="font-semibold">متامسک</span> خود را وصل کنید.
           </h3>
         )}
 
