@@ -28,7 +28,8 @@ const Services = () => (
         </h1>
         <p className="text-left my-2 text-white font-light md:w-9/12 w-11/12 text-base">
           The best choice for buying and selling your crypto assets, with the
-          various super friendly services we offer
+          various super friendly services we offer بهترین انتخاب برای خرید و
+          فروش ارزدیجیتال، با خدمات کاربر پسندی که ما ارائه میدهیم.
         </p>
       </div>
 
