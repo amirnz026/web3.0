@@ -34,7 +34,7 @@ const TransactionsCard = ({
             target="_blank"
             rel="noreferrer"
           >
-            <p className="text-white text-base">
+            <p className="text-white text-base text-center md:text-start">
               آدرس مبدا: {shortenAddress(addressFrom)}
             </p>
           </a>
@@ -43,11 +43,13 @@ const TransactionsCard = ({
             target="_blank"
             rel="noreferrer"
           >
-            <p className="text-white text-base">
+            <p className="text-white text-base text-center md:text-start">
               آدرس مقصد: {shortenAddress(addressTo)}
             </p>
           </a>
-          <p className="text-white text-base">مقدار: {amount} ETH</p>
+          <p className="text-white text-base text-center md:text-start">
+            مقدار: {amount} ETH
+          </p>
           {message && (
             <>
               <br />

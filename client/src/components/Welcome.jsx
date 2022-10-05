@@ -44,11 +44,17 @@ const Welcome = () => {
   return (
     <div className="flex w-full justify-center items-center">
       <div className="flex mf:flex-row flex-col items-start justify-between md:p-20 py-12 px-4">
-        <div className="flex flex-1 justify-start items-start flex-col mf:mr-10">
-          <h1 className="text-3xl sm:text-5xl text-white text-gradient py-1">
-            ارسال اتریوم به سرتاسر دنیا
+        <div className="flex flex-1 justify-center items-center md:justify-start md:items-start flex-col mf:mr-10">
+          <h1 className="text-3xl sm:text-5xl text-white text-gradient py-1 m-1 font-semibold ">
+            ارسال اتریوم
           </h1>
-          <p className="text-left mt-5 text-white font-light md:w-9/12 w-11/12 text-base">
+          <h1 className="text-3xl sm:text-5xl text-white text-gradient py-1 m-1 font-semibold">
+            به سرتاسر دنیا
+          </h1>
+          <h1 className="text-3xl sm:text-5xl text-white text-gradient py-1 m-1 font-semibold">
+            با امنیت بالا
+          </h1>
+          <p className="mt-5 text-white font-light md:w-9/12 w-11/12 text-base text-center md:text-start">
             در دنیای ارز‌های دیجیتال به گشت و‌گذار بپردازید و از سرعت و امنیت
             بالای سرویس‌های <span className="font-semibold">کریپتیک</span> لذت
             ببرید.
@@ -59,26 +65,27 @@ const Welcome = () => {
               onClick={connectWallet}
               className="flex flex-row justify-center items-center my-5 bg-[#2952e3] p-3 rounded-full cursor-pointer hover:bg-[#2546bd]"
             >
-              <AiFillPlayCircle className="text-white mr-2" />
-              <p className="text-white text-base font-semibold">
-                کیف پول متامسک خود را وصل کنید.
+              <AiFillPlayCircle className="text-white me-1" />
+              <p className="text-white text-base ">
+                کیف پول <span className="font-bold">متامسک</span> خود را وصل
+                کنید.
               </p>
             </button>
           )}
 
           <div className="grid sm:grid-cols-3 grid-cols-2 w-full mt-10">
-            <div className={`rounded-tl-2xl ${companyCommonStyles}`}>
+            <div className={`rounded-ts-2xl ${companyCommonStyles}`}>
               اطمینان
             </div>
             <div className={companyCommonStyles}>امنیت</div>
-            <div className={`sm:rounded-tr-2xl ${companyCommonStyles}`}>
+            <div className={`sm:rounded-te-2xl ${companyCommonStyles}`}>
               اتریوم
             </div>
-            <div className={`sm:rounded-bl-2xl ${companyCommonStyles}`}>
+            <div className={`sm:rounded-bs-2xl ${companyCommonStyles}`}>
               وب ۳.۰
             </div>
             <div className={companyCommonStyles}>کارمزد پایین</div>
-            <div className={`rounded-br-2xl ${companyCommonStyles}`}>
+            <div className={`rounded-be-2xl ${companyCommonStyles}`}>
               بلاک‌چین
             </div>
           </div>
