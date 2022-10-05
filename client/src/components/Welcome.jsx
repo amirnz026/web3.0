@@ -45,13 +45,13 @@ const Welcome = () => {
     <div className="flex w-full justify-center items-center">
       <div className="flex mf:flex-row flex-col items-start justify-between md:p-20 py-12 px-4">
         <div className="flex flex-1 justify-center items-center md:justify-start md:items-start flex-col mf:mr-10">
-          <h1 className="text-3xl sm:text-5xl text-white text-gradient py-1 m-1 font-semibold ">
-            ارسال اتریوم
+          <h1 className="text-3xl sm:text-5xl text-white py-1 m-1 font-semibold ">
+            ارسال <span className="blue-gradient font-bold">اتریوم</span>
           </h1>
-          <h1 className="text-3xl sm:text-5xl text-white text-gradient py-1 m-1 font-semibold">
+          <h1 className="text-3xl sm:text-5xl text-white py-1 m-1 font-semibold">
             به سرتاسر دنیا
           </h1>
-          <h1 className="text-3xl sm:text-5xl text-white text-gradient py-1 m-1 font-semibold">
+          <h1 className="text-3xl sm:text-5xl text-white py-1 m-1 font-semibold">
             با امنیت بالا
           </h1>
           <p className="mt-5 text-white font-light md:w-9/12 w-11/12 text-base text-center md:text-start">
